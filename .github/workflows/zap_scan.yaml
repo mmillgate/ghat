@@ -5,10 +5,10 @@ on:
   # schedule:
   #   # Runs every day At 08:30 EST
   #   - cron:  '30 13 * * *'
-  inputs:
-    url:
-      description: 'url to test'
-      required: true
+    inputs:
+      url:
+        description: 'url to test'
+        required: true
 
 jobs:
   zap_scan:
