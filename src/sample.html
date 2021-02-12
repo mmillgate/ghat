@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+    <head>
+        <title>Sample Hello World!</title>
+        <script>
+            // Javascript popups
+            function show_alert() {
+                alert("alert me");
+            }
+            function show_prompt() {
+                var phrase=prompt("prompt me - Phrase?: ","this is a test");
+                document.getElementById('divPromptId').innerHTML = "phrase was: " + phrase;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>H1 - Hello World!</h1>
+        <h1>H1 - Hello World!</h1>
+        <h2>H2 - Hello World!</h2>
+        <h3>H3 - Hello World!</h3>
+        <div>Div - Hello World!</div>
+        <p>P - Hello World!</p>
+        <a href='#'>A - Hello World!</a>
+        <br>
+        <img alt='blank_image' src='https://picsum.photos/200'><br>img - Hello World!</img>
+        <div><input type='button' onclick='show_alert()' value='Alert PopUp'></div>
+        <div><input type='button' onclick='show_prompt()' value='Prompt PopUp'></div>
+        <div id='divPromptId'>js prompt text</div>
+    </body>
+</html>
